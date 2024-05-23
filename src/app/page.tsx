@@ -1,63 +1,36 @@
-import Image from "next/image";
-
-import { MdGite, MdSegment } from "react-icons/md";
-import { MdLightMode } from "react-icons/md";
-import { MdBrightness3 } from "react-icons/md";
-import IconLogo from "../../public/vector-light.svg";
-import Profile from "../../public/Group.png";
-import { SiGmail } from "react-icons/si";
-import { FaLinkedin, FaTelegram, FaTwitter } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FiTwitter } from "react-icons/fi";
-import { MdOutlineLocationOn } from "react-icons/md";
-import Skills from "@/components/skills";
 import NavBar from "@/components/NavBar";
 import HeroSection from "@/components/HeroSection";
-import bgCover from "../../public/Frame-65.png";
-import COverImage from "../../public/layer-888.png";
-import IconBottom from "../../public/Vector-purple-title.png";
-import IconTop from "../../public/Vector-hello.png";
 import SkillsData from "@/components/SkillsData";
 import MyProjects from "@/components/MyProjects";
-import { FiGithub } from "react-icons/fi";
+import TtitleSection from "@/components/TitleSection";
 
 export default function Home() {
   return (
     <>
-      {/* N.B */}
-
       <div className="relative min-h-screen w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_800px_at_100%_200px,#d5c5ff,transparent)]"></div>
-        
         <div className="relative z-30 md:px-16 px-10 md:py-10 py-8">
           <NavBar />
           <HeroSection />
         </div>
+
         <div className="mt-20 pt-1  md:h-[30rem] h-[30rem]  md:rounded-t-[60px] md:rounded-b-[60px] md:rounded-sm rounded-t-[60px] ">
-          <div className=" relative pt-1 mt-10 md:w-[10%]  w-[30%] mx-auto ">
-            <div className="mt-5 flex justify-center items-center flex-col ">
-              <div className="border border-black px-4 py-2  rounded-full text-black">
-                <p className="text-[1.1rem]">My Skills</p>
-
-                <Image
-                  src={IconTop}
-                  width={30}
-                  height={30}
-                  alt="icon"
-                  className=" absolute top-0 right-0 "
-                />
-              </div>
-
-              {/* images */}
+          <TtitleSection title="My skills" />
+          <div className="">
+            <div className=" md:hidden block">
+              <h2 className="text-center md:w-full mt-5  font-recoleta mx-auto md:mt-3 md:text-center md:font-[600] font-[600] md:text-[1.6rem] text-[1.6rem] ">
+                <span className="text-[#8470b4]">Technology</span> which
+              </h2>
+              <h2 className="text-center md:w-full   font-recoleta mx-auto  md:text-center md:font-[600] font-[600] md:text-[1.6rem] text-[1.6rem] ">
+                I use on Daily basis
+              </h2>
             </div>
-          </div>
-          <div>
-            <h2 className="px-10 md:font-[600] font-[600] md:text-[1.5rem] text-[1.5rem] text-center md:text-center mt-6">
-              <span className="">Some of the</span>
-            </h2>
-            <h2 className="text-center md:text-center md:font-[600] font-[600] md:text-[1.6rem] text-[1.6rem] ">
-              <span className="text-[#8470b4]">Technology</span> I have use
-            </h2>
+            <div className=" hidden md:block">
+              <h2 className="text-center md:w-full mt-5  font-recoleta mx-auto md:mt-3 md:text-center md:font-[600] font-[600] md:text-[1.6rem] text-[1.6rem] ">
+                <span className="text-[#8470b4]">Technology</span> which I use
+                on Daily basis
+              </h2>
+            </div>
             <SkillsData />
           </div>
 
@@ -77,20 +50,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-20">
-          <div className="relative pt-1 mt-5 md:w-[12%] w-[30%] mx-auto">
-            <div className="mt-5 flex justify-center items-center flex-col ">
-              <div className="border border-black px-4 py-1 rounded-full">
-                <p>My Projects</p>
-                <Image
-                  src={IconTop}
-                  width={30}
-                  height={30}
-                  alt="icon"
-                  className=" absolute top-0 right-0 "
-                />
-              </div>
-            </div>
-          </div>
+          <TtitleSection title="My Projects" />
           {/* My projects */}
           <MyProjects />
         </div>

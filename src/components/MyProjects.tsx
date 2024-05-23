@@ -2,14 +2,15 @@ import React from "react";
 import Image from "next/image";
 import { FaLink } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
-import { ProjectData } from "../../constant/ProjectData";
+import useProject  from "../hooks/useProjectData";
 export default function MyProjects() {
+   const { projectData } = useProject();
   return (
     <>
       <div className=" md:px-20 md:flex-row md:pt-10 md:pb-5  flex-col flex items-center justify-between">
-        <div className="font-[600] md:text-[2rem] text-center pt-9 md:text-left text-[1.6rem] pb-7 ">
-          <h2>Lets have a look at </h2>
-          <h2 className="text-[#8470b4] md:text-[2rem] text-center md:text-left text-[1.6rem] ">
+        <div className="font-[600] md:text-[2rem]  text-center pt-9 md:text-left text-[1.6rem] pb-7 ">
+          <h2 className="font-recoleta">Lets have a look at </h2>
+          <h2 className=" font-recoleta text-[#8470b4]  md:text-[2rem] text-center md:text-left text-[1.6rem] ">
             My Projects
           </h2>
         </div>
@@ -19,7 +20,7 @@ export default function MyProjects() {
       </div>
       <div className="container mx-auto p-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
-          {ProjectData.map((item) => (
+          {projectData.map((item) => (
             <>
               <div
                 key={item.id}

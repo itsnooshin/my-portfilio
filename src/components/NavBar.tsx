@@ -1,13 +1,13 @@
 import React from "react";
-import IconLogo from "../../public/Vector-light-2.svg";
-import IconLogoBlack from "../../public/Vector-black.svg";
+import IconLogo from "../../public/assest/images/Vector-light-2.svg";
+import IconLogoBlack from "../../public/assest/images/Vector-black.svg";
 
 import Image from "next/image";
 import { MdGite, MdSegment } from "react-icons/md";
 export default function NavBar() {
   return (
     <>
-      <div className=" md:hidden flex items-center justify-between  ">
+      <div className="lg:hidden flex  items-center justify-between  ">
         <Image
           src={IconLogoBlack}
           width={35}
@@ -25,16 +25,15 @@ export default function NavBar() {
         </button>
       </div>
 
-      <div className=" container hidden bg-black   md:flex items-center justify-between  rounded-full text-white ">
-        <div>
-          <nav>
-            <ul className="flex px-3 gap-10 py-2 ">
-              <li className=" bg-[#8470b4] py-3  rounded-3xl px-6">Home</li>
-              <li className=" py-3  rounded-3xl px-6">About</li>
-              <li className=" py-3  rounded-3xl px-6">Blog</li>
-            </ul>
-          </nav>
-        </div>
+      <div className=" hidden lg:flex   mb-4 bg-black items-center justify-between  rounded-full text-white ">
+        <nav>
+          <ul className="flex px-3 gap-10 py-2 ">
+            <li className=" bg-[#8470b4] py-3  rounded-3xl px-6">Home</li>
+            <li className=" py-3  rounded-3xl px-6">About</li>
+            <li className=" py-3  rounded-3xl px-6">Blog</li>
+          </ul>
+        </nav>
+
         <div className=" bg-[#8470b4] p-2 rounded-full w-[3rem] flex gap-3 items-center">
           <Image
             src={IconLogo}
@@ -48,9 +47,9 @@ export default function NavBar() {
         </div>
         <nav>
           <ul className="flex px-3 gap-10 py-2 ">
-            <li className=" py-3  rounded-3xl px-6">Home</li>
-            <li className=" py-3  rounded-3xl px-6">About</li>
-            <li className=" py-3  rounded-3xl px-6">Blog</li>
+            <li className=" py-3  rounded-3xl px-6">Resume</li>
+            <li className=" py-3  rounded-3xl px-6">Project</li>
+            <li className=" py-3  rounded-3xl px-6">Contact</li>
           </ul>
         </nav>
       </div>
