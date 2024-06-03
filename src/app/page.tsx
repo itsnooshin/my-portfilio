@@ -3,6 +3,8 @@ import HeroSection from "@/components/HeroSection";
 import SkillsData from "@/components/SkillsData";
 import MyProjects from "@/components/MyProjects";
 import TtitleSection from "@/components/TitleSection";
+import AboutMe from "@/components/AboutMe";
+import Blog from "@/components/Blog";
 
 export default function Home() {
   return (
@@ -13,7 +15,7 @@ export default function Home() {
           <NavBar />
           <HeroSection />
         </div>
-
+        <AboutMe />
         <div className="mt-20 pt-1  md:h-[30rem] h-[30rem]  md:rounded-t-[60px] md:rounded-b-[60px] md:rounded-sm rounded-t-[60px] ">
           <TtitleSection title="My skills" />
           <div className="">
@@ -49,12 +51,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-20">
+        <section className="mt-20" id="project">
           <TtitleSection title="My Projects" />
           {/* My projects */}
           <MyProjects />
-        </div>
+        </section>
       </div>
+
+      <Blog />
     </>
   );
 }

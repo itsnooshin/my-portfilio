@@ -1,7 +1,7 @@
 import React from "react";
 import IconLogo from "../../public/assest/images/Vector-light-2.svg";
 import IconLogoBlack from "../../public/assest/images/Vector-black.svg";
-
+import Link from "next/link";
 import Image from "next/image";
 import { MdGite, MdSegment } from "react-icons/md";
 export default function NavBar() {
@@ -25,31 +25,48 @@ export default function NavBar() {
         </button>
       </div>
 
-      <div className=" hidden lg:flex   mb-4 bg-black items-center justify-between  rounded-full text-white ">
+      <div className=" hidden lg:flex border shadow-2xl w-[900px] mx-auto  mb-4 bg-white items-center justify-between  rounded-full text-slate-600 ">
         <nav>
           <ul className="flex px-3 gap-10 py-2 ">
-            <li className=" bg-[#8470b4] py-3  rounded-3xl px-6">Home</li>
-            <li className=" py-3  rounded-3xl px-6">About</li>
-            <li className=" py-3  rounded-3xl px-6">Blog</li>
+            <li className="py-3  rounded-3xl px-6 bg-[#8470b4] text-white">
+              Home
+            </li>
+            <Link href={"#about-me"}>
+              <li className=" py-3  rounded-3xl px-6 ">About</li>
+            </Link>
+            <Link href={"#blog"}>
+              <li className=" py-3  rounded-3xl px-6">Blog</li>
+            </Link>
           </ul>
         </nav>
+        <Link href={"/"}>
+          <div className=" bg-[#8470b4] p-2 rounded-full w-[3rem] flex gap-3 items-center">
+            <Image
+              src={IconLogo}
+              width={35}
+              height={35}
+              alt="Logo for Website"
+              sizes="100vw"
+              className="p-2 "
+            />
+            <h2 className=" font-semibold"></h2>
+          </div>
+        </Link>
 
-        <div className=" bg-[#8470b4] p-2 rounded-full w-[3rem] flex gap-3 items-center">
-          <Image
-            src={IconLogo}
-            width={35}
-            height={35}
-            alt="Logo for Website"
-            sizes="100vw"
-            className="p-2 "
-          />
-          <h2 className=" font-semibold"></h2>
-        </div>
         <nav>
           <ul className="flex px-3 gap-10 py-2 ">
-            <li className=" py-3  rounded-3xl px-6">Resume</li>
-            <li className=" py-3  rounded-3xl px-6">Project</li>
-            <li className=" py-3  rounded-3xl px-6">Contact</li>
+            <Link href="/pdf-viewer" passHref>
+              <li className="py-3 rounded-3xl px-6">Resume</li>
+            </Link>
+
+            <Link href="#project">
+              {" "}
+              <li className=" py-3  rounded-3xl px-6">Project</li>
+            </Link>
+            <Link href="#contact">
+              {" "}
+              <li className=" py-3  rounded-3xl px-6">Contact</li>
+            </Link>
           </ul>
         </nav>
       </div>

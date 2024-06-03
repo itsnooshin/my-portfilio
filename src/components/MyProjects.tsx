@@ -2,12 +2,12 @@ import React from "react";
 import Image from "next/image";
 import { FaLink } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
-import useProject  from "../hooks/useProjectData";
+import useProject from "../hooks/useProjectData";
 export default function MyProjects() {
-   const { projectData } = useProject();
+  const { projectData } = useProject();
   return (
     <>
-      <div className=" md:px-20 md:flex-row md:pt-10 md:pb-5  flex-col flex items-center justify-between">
+      <div className="   md:px-20 md:flex-row md:pt-10 md:pb-5  flex-col flex items-center justify-between">
         <div className="font-[600] md:text-[2rem]  text-center pt-9 md:text-left text-[1.6rem] pb-7 ">
           <h2 className="font-recoleta">Lets have a look at </h2>
           <h2 className=" font-recoleta text-[#8470b4]  md:text-[2rem] text-center md:text-left text-[1.6rem] ">
@@ -59,4 +59,3 @@ export default function MyProjects() {
     </>
   );
 }
-
