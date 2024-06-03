@@ -41,7 +41,7 @@ To set up the Music Player Project locally, follow these steps:
    ```
 2. **Navigate to the project directory**
    ```bash
-   cd music-player-project
+   cd my-portfilio
    ```
 3. **Install dependencies**
 
