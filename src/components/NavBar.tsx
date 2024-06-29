@@ -35,7 +35,7 @@ export default function NavBar() {
               <li className=" py-3  rounded-3xl px-6 ">About</li>
             </Link>
             <Link href={"#blog"}>
-              <li className=" py-3  rounded-3xl px-6">Blog</li>
+              <li className=" py-3  rounded-3xl px-6">Exprience</li>
             </Link>
           </ul>
         </nav>
@@ -56,7 +56,7 @@ export default function NavBar() {
         <nav>
           <ul className="flex px-3 gap-10 py-2 ">
             <Link href="/pdf-viewer" passHref>
-              <li className="py-3 rounded-3xl px-6">Resume</li>
+              <li className="py-3 rounded-3xl px-6">Skills</li>
             </Link>
 
             <Link href="#project">

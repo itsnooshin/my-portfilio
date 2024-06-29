@@ -1,55 +1,46 @@
 import TtitleSection from "./TitleSection";
 import Image from "next/image";
-import MyPhoto from "../../public/assest/images/my-photo.jpg";
+import MyPhoto from "../../public/assest/images/icon-profile.png";
 
 export default function AboutMe() {
   return (
     <>
-      <section id="about-me" className="mt-20 ">
+      <section id="about-me">
         <TtitleSection title="About Me" />
 
-        <div className=" md:h-[100vh] w-full  md:px-20 px-10">
+        <div className=" md:h-[100vh] w-full  md:px-20 px-5">
           <div className="font-[600] md:text-[2rem]  text-center pt-9 md:text-left text-[1.6rem] pb-7 ">
-            <h2 className="font-recoleta">Lets have a look at </h2>
-            <h2 className=" font-recoleta text-[#8470b4]  md:text-[2rem] text-center md:text-left text-[1.6rem] ">
+            <h2 className="text-[1.9rem] md:text-[2.5rem] md:font-bold font-light  font-recoleta">
+              Lets have a look at{" "}
+            </h2>
+            <h2 className=" font-recoleta text-[#8470b4] font-medium md:font-bold  md:text-[2rem]  md:text-left text-[1.6rem] ">
               Discover My Journey
             </h2>
           </div>
           <div className="  md:flex flex gap-6 md:flex-row   flex-col items-center justify-center md:items-center  md:justify-between">
-            <div className=" md:w-[55%] w-[90%] text-center md:text-left">
-              <p>
-                My name is Nooshin, and I am a dedicated junior frontend
-                developer with a deep love for design. Starting my journey in
-                2022, I have been immersed in the world of web development,
-                passionately creating digital products for various companies.
-                From engaging marketing websites to complex enterprise
-                solutions, my focus is always on delivering efficient, polished,
-                and user-friendly experiences.
-              </p>
-              <p>
-                In my early career, I have had the opportunity to work alongside
-                incredibly talented individuals, contributing to digital
-                solutions that meet the needs of both businesses and consumers.
-                My background in design provides me with a unique perspective,
-                allowing me to approach development with a keen eye for
-                aesthetics and functionality.
-              </p>
-              <p>
-                For me, frontend development is not just about coding;
-                it&lsquo;s about crafting intuitive web applications that are
-                accessible and enjoyable to use. By combining my design
-                knowledge with technical skills, I strive to create products
-                that offer a seamless and delightful user experience.
+            <div className=" md:w-[55%]  md:text-left">
+              <p className="pb-5 text-left md:text-left md:text-[1.2rem]">
+                I'm Nooshin, a frontend developer deeply passionate about
+                design. Starting my journey in 2022, I've been fully immersed in
+                web development, crafting digital products that blend creativity
+                with functionality. I've had the privilege of collaborating with
+                talented teams to deliver engaging marketing sites and robust
+                enterprise solutions. With a background in design, I bring a
+                unique perspective to development, focusing on aesthetics and
+                user-friendly interfaces. Beyond coding, my goal is to create
+                intuitive web applications that prioritize accessibility and
+                user enjoyment. I believe in merging design sensibilities with
+                technical expertise to craft seamless digital experiences.
               </p>
             </div>
-            
-            <div className=" ">
+
+            <div>
               <Image
                 src={MyPhoto}
                 alt="my photo for hero section"
-                width={400}
-                height={400}
-                className=" md:w-90 md:h-90 w-45 h-45 object-cover rounded-full shadow-2xl border-2 border-slate-400"
+                width={500}
+                height={500}
+                className=" md:w-90 md:h-90 w-45 h-45 object-cover"
               />
             </div>
           </div>
