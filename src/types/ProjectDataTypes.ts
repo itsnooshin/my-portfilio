@@ -5,6 +5,7 @@ interface PojectDataItem {
   image: StaticImageData;
   text: string;
   technology: string[];
+  title: string;
 }
 
 type ProjectDataTypes = PojectDataItem[];

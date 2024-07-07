@@ -9,23 +9,32 @@ import Mui from "../../public/assest/images/materialui-original.png";
 import Tailwind from "../../public//assest/images/tailwindcss-plain.png";
 import React from "../../public//assest/images/react-original.png";
 import Nextjs from "../../public//assest/images/nextjs-original.png";
-
+import GIT from "../../public//assest/images/Git.svg";
+import Github from "../../public//assest/images/Github.png";
+import HTML from "../../public//assest/images/HTML.svg";
+import Css from "../../public//assest/images/css.svg";
+import figma from "../../public//assest/images/figma.svg";
+import bootstrap from "../../public//assest/images/bootstrappp.svg";
+import redux from "../../public//assest/images/redux.svg";
 const useProjectData = (): ProjectDataTypes => {
   return [
     {
       id: 0,
+      title: "modimal",
       image: Modimal,
       text: "Modimal is an E-Commerce clothing shop for women, developed by Nextjs and typescript. styled with Material UI",
       technology: ["React", "NextJs", "Tailwind", "Supabase", "TypeScript"],
     },
     {
       id: 1,
+      title: "portfilio",
       image: Portfilio,
       text: "Modimal is an E-Commerce clothing shop for women, developed by Nextjs and typescript. styled with Material UI",
       technology: ["React", "NextJs", "Tailwind", "Supabase", "TypeScript"],
     },
     {
       id: 2,
+      title: "uploader",
       image: Uploader,
       text: "Modimal is an E-Commerce clothing shop for women, developed by Nextjs and typescript. styled with Material UI",
       technology: ["React", "NextJs", "Tailwind", "Supabase", "TypeScript"],
@@ -36,20 +45,16 @@ const useProjectData = (): ProjectDataTypes => {
 const useSkills = (): SkillDataTypes => {
   return [
     {
-      id: 0,
-      image: Javacript,
-    },
-    {
       id: 1,
-      image: Mui,
+      image: HTML,
     },
     {
       id: 2,
-      image: Typescript,
+      image: Css,
     },
     {
       id: 3,
-      image: Tailwind,
+      image: Javacript,
     },
     {
       id: 4,
@@ -57,7 +62,41 @@ const useSkills = (): SkillDataTypes => {
     },
     {
       id: 5,
+      image: redux,
+    },
+    {
+      id: 6,
+      image: Typescript,
+    },
+    {
+      id: 7,
       image: Nextjs,
+    },
+    {
+      id: 8,
+      image: Mui,
+    },
+
+    {
+      id: 9,
+      image: Tailwind,
+    },
+    {
+      id: 10,
+      image: bootstrap,
+    },
+
+    {
+      id: 11,
+      image: GIT,
+    },
+    {
+      id: 12,
+      image: Github,
+    },
+    {
+      id: 13,
+      image: figma,
     },
   ];
 };

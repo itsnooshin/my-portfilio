@@ -1,30 +1,37 @@
+"use client";
+
 import React from "react";
 import useProject from "@/hooks/useProjectData";
 import Image from "next/image";
 import TtitleSection from "./TitleSection";
+import { motion } from "framer-motion";
 export default function SkillsData() {
-  const {SkillData} = useProject()
+  const { SkillData } = useProject();
+
+
   return (
     <>
       <section className="mt-20" id="project">
         <TtitleSection title="My Skills" />
-        <div className=" container md:w-full pt-10 w-[250px] mx-auto  md:flex justify-center gap-6  grid grid-cols-3	 ">
-          {SkillData.map((item) => (
-            <>
-              <div
-                key={item.id}
-                className=" md:p-5 p-3 border rounded-3xl border-slate-200 shadow-2xl"
-              >
-                <Image
-                  src={item.image}
-                  width={60}
-                  alt=""
-                  height={60}
-                  className=" object-cover"
-                />
-              </div>
-            </>
-          ))}
+        <div className=" container pt-10 md:w-full md:flex gap-6 mx-auto grid grid-cols-4 items-center   ">
+          
+            {SkillData.map((item) => (
+              <>
+                <div
+                  key={item.id}
+                  className="border-slate-200 shadow-2xl p-3 md:p-3 border rounded-3xl"
+                >
+                  <Image
+                    src={item.image}
+                    width={200}
+                    alt=""
+                    height={200}
+                    className=" object-cover"
+                  />
+                </div>
+              </>
+            ))}
+          
         </div>
       </section>
     </>

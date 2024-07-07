@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرم عملکردی</title>
+    <link rel="stylesheet" href="assets/plagin/bootstrap-4.5.3-dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/plagin/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/stylebox.css">
+    <link rel="stylesheet" href="assets/css/styleleftbox.css">
+    <link rel="stylesheet" href="assets/css/inputrange.css">
+    <link rel="stylesheet" href="assets/css/styleselect.css">
+    <link rel="stylesheet" href="assets/plagin/persianDatepicker-master/css/persianDatepicker-default.css">
+    <link rel="stylesheet" href="assets/plagin/range-slider-stop/assets/css/slider.css">
+</head>
+
+<body>
+    <div class="body">
+        <div class="w-100 justify-content-center loaderCu d-none">
+            <div class="lds-ripple">
+                <div class="checkDonemark"></div>
+                <div class="loadingLds"></div>
+                <div class="loadingLds"></div>
+                <div class="loadingLdstow"></div>
+            </div>
+        </div>
+        <div class="full-height">
+            <!-- main box -->
+            <div class="mainbox">
+                <div class="boxhead">
+                    <div title="فرم عملکرد فنی">فرم عملکرد فنی</div>
+                    <div class="d-flex">
+                        <a href="FunctionalForm.html" title="بازگشت">بازگشت</a>
+                        <a href="FunctionalForm.html" class="mr-1"><img src="assets/images/arowhome (1).svg"
+                                alt="arowhome (1).svg"></a>
+                    </div>
+                </div>
+                <!-- box body -->
+                <div class="boxbody">
+                    <!-- right body -->
+                    <div class="rightbody">
+                        <div class="rbitem">
+                            <div class="bbnum active" title="ارائه ها" num="1">۱</div>
+                            <div class="bbline activeline" line="1"></div>
+                            <div class="bbtext textactive" title="ارائه ها" text="1">
+                                ارائه
+                                ها</div>
+                        </div>
+                        <div class="rbitem">
+                            <div class="bbnum disablenum" title="عملیات ها" num="2">۲
+                            </div>
+                            <div class="bbline" line="2"></div>
+                            <div class="bbtext disabletext" title="عملیات ها" text="2">
+                                عملیات ها</div>
+                        </div>
+                        <div class="rbitem">
+                            <div class="bbnum disablenum" title="ترابلشوتینگ" num="3">۳
+                            </div>
+                            <div class="bbline" line="3"></div>
+                            <div class="bbtext disabletext" title="ترابلشوتینگ" text="3">
+                                ترابلشوتینگ</div>
+                        </div>
+                        <div class="rbitem">
+                            <div class="bbnum disablenum" title="جلسات ارائه" num="4">۴
+                            </div>
+                            <div class="bbline" line="4"></div>
+                            <div class="bbtext disabletext" title="جلسات ارئه" text="4">
+                                جلسات ارائه</div>
+                        </div>
+                        <div class="rbitem">
+                            <div class="bbnum disablenum" title="انجام یا مشارکت" num="5">۵
+                            </div>
+                            <div class="bbline" line="5"></div>
+                            <div class="bbtext disabletext" title="انجام یا مشارکت" text="5">انجام یا مشارکت</div>
+                        </div>
+                        <div class="rbitem">
+                            <div class="bbnum disablenum" title="پیشنهادات و ارائه ها" num="6">۶</div>
+                            <div class="bbline" line="6"></div>
+                            <div class="bbtext disabletext" title="پیشنهادات و ارائه ها" text="6">پیشنهادات و ارائه ها
+                            </div>
+                        </div>
+                        <div class="rbitem">
+                            <div class="bbnum disablenum" title="Traning" num="7">۷
+                            </div>
+                            <div class="bbline" line="7"></div>
+                            <div class="bbtext disabletext" title="Traning" text="7">
+                                Traning</div>
+                        </div>
+                    </div>
+                    <!-- left body -->
+                    <div class="leftbody">
+                        <div class="form" valu-tab="1">
+                            <div class="formheight">
+                                <div class="formuser formdesgine d-none">
+                                    <div class="lbhead" title="ارائه ها">ارائه ها
+                                    </div>
+                                    <div class="lbbody">
+                                        <div class="row mrow">
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext" title="نام و نام خانوادگی">
+                                                        نام و
+                                                        نام خانوادگی</div>
+                                                    <input type="text" class="form-control binput"
+                                                        onkeypress="return /[a-zآ-ی]/i.test(event.key)">
+                                                </div>
+                                            </div>
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext" title="نوع ارائه">نوع ارائه</div>
+                                                    <select class="form-control bselect">
+                                                        <option disabled hidden>لطفا انتخاب کنید</option>
+                                                        <option value="1">ارائه‌های تحویل سرور/سرویس</option>
+                                                        <option value="2">ارائه‌های مرتبط با ترابلشوتینگ</option>
+                                                        <option value="3">ارائه‌های مرتبط با تیونینگ سرویس</option>
+                                                        <option value="4">ارائه‌های مرتبط با راهکارها و سرویس‌های جدید
+                                                        </option>
+                                                        <option>سایر ارائه‌ها</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext" title="عنوان ارئه">عنوان
+                                                        ارائه
+                                                    </div>
+                                                    <input type="text" class="form-control binput">
+                                                </div>
+                                            </div>
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext" title="تاریخ تکمیل فرم">
+                                                        تاریخ
+                                                        تکمیل فرم</div>
+                                                    <label for="" class="blabel usage">لطفا
+                                                        انتخاب
+                                                        کنید</label>
+                                                    <input type="text" class="form-control binput history" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="formmodir formdesgine">
+                                    <div class="lbhead" title="ارائه ها">ارائه ها</div>
+                                    <div class="lbbody">
+                                        <div class="row mrow">
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext" title="نوع ارائه">نوع ارائه</div>
+                                                    <select name="" id="" class="form-control bselect type">
+                                                        <option value="1" disabled selected hidden>لطفا انتخاب کنید
+                                                        </option>
+                                                        <option value="ارائه‌های تحویل سرور/سرویس">ارائه‌های تحویل
+                                                            سرور/سرویس</option>
+                                                        <option value="ارائه‌های مرتبط با ترابلشوتینگ">ارائه‌های مرتبط
+                                                            با ترابلشوتینگ</option>
+                                                        <option value="ارائه‌های مرتبط با تیونینگ سرویس">ارائه‌های مرتبط
+                                                            با تیونینگ سرویس</option>
+                                                        <option value="ارائه‌های مرتبط با راهکارها و سرویس‌های جدید">
+                                                            ارائه‌های مرتبط با راهکارها و سرویس‌های جدید
+                                                        </option>
+                                                        <option value="سایر ارائه‌ها">سایر ارائه‌ها</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext" title="عنوان ارئه">عنوان ارائه</div>
+                                                    <input type="text" class="form-control binput title">
+                                                </div>
+                                            </div>
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext " title="تاریخ تکمیل فرم">تاریخ تکمیل فرم</div>
+                                                    <input type="text"
+                                                        class="form-control binput usage history date date1"
+                                                        placeholder="لطفا انتخاب کنید" readonly>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="formmanager formdesgine mt-3">
+                                    <div class="lbhead" title="ارزیابی">ارزیابی</div>
+                                    <div class="lbbody">
+                                        <div class="row mrow">
+                                            <div class="padinput col-12">
+                                                <div class="rangeborder">
+                                                    <div class="rangediv">
+                                                        <div id="" class="range">
+                                                            <input class="input-range-1 ev-1" type="range" min="1"
+                                                                max="10" steps="1" value="1">
+                                                        </div>
+                                                        <ul class="range-labels labels-range-1">
+                                                            <li data-stop=1>1</li>
+                                                            <li data-stop=2>2</li>
+                                                            <li data-stop=3>3</li>
+                                                            <li data-stop=4>4</li>
+                                                            <li data-stop=5>5</li>
+                                                            <li data-stop=6>6</li>
+                                                            <li data-stop=7>7</li>
+                                                            <li data-stop=8>8</li>
+                                                            <li data-stop=9>9</li>
+                                                            <li data-stop=10>10</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput ">
+                                                    <div class="bftext" title="شاخص
+                                                ">شاخص</div>
+                                                    <select name="" id="" class="bselect form-control">
+                                                        <option value="" disabled selected hidden>لطفا انتخاب کنید
+                                                        </option>
+                                                        <option value="">تخصصی</option>
+                                                        <option value="">عمومی</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons mt-3">
+                                <div class="back backnone" valu-back="1">
+                                    <img src="assets/images/arrowBefore.svg" alt="arrowBefore.svg" width="40px"
+                                        height="40px">
+                                </div>
+                                <div class="next" title="ذخیره و مرحله بعد" valu-next="1">
+                                    <img src="assets/images/arrowAfter.svg" alt="arrowAfter.svg" width="40px"
+                                        height="40px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form d-none" valu-tab="2">
+                            <div class="formheight">
+                                <div class="formuser formdesgine">
+                                    <div class="lbhead" title="عملیات ها">عملیات ها</div>
+                                    <div class="lbbody">
+                                        <div class="row mrow">
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext" title="عنوان">عنوان</div>
+                                                    <input type="text" class="form-control binput title2">
+                                                </div>
+                                            </div>
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext" title="تاریخ انجام">تاریخ انجام</div>
+                                                    <input type="text"
+                                                        class="form-control binput usage history date date2"
+                                                        placeholder="لطفا انتخاب کنید" readonly>
+
+                                                </div>
+                                            </div>
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext" title="ایشوی مرتبط">ایشوی مرتبط</div>
+                                                    <input type="text" class="form-control binput related-issue">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="formmanager formdesgine mt-3">
+                                    <div class="lbhead" title="ارزیابی">ارزیابی</div>
+                                    <div class="lbbody">
+                                        <div class="row mrow">
+                                            <div class="padinput col-12">
+                                                <div class="rangeborder">
+                                                    <div class="rangediv">
+                                                        <div id="" class="range">
+                                                            <input class="input-range-1 ev-2" type="range" min="1"
+                                                                max="10" steps="1" value="1">
+                                                        </div>
+                                                        <ul class="range-labels labels-range-1">
+                                                            <li data-stop=1>1 </li>
+                                                            <li data-stop=2>2 </li>
+                                                            <li data-stop=3>3 </li>
+                                                            <li data-stop=4>4 </li>
+                                                            <li data-stop=5>5 </li>
+                                                            <li data-stop=6>6 </li>
+                                                            <li data-stop=7>7 </li>
+                                                            <li data-stop=8>8 </li>
+                                                            <li data-stop=9>9 </li>
+                                                            <li data-stop=10>10 </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput ">
+                                                    <div class="bftext" title="شاخص
+                                            ">شاخص</div>
+                                                    <select name="" id="" class="bselect form-control">
+                                                        <option value="" disabled selected hidden>لطفا انتخاب کنید
+                                                        </option>
+                                                        <option value="">تخصصی</option>
+                                                        <option value="">عمومی</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons mt-3">
+                                <div class="back" title="مرحله قبل" valu-back="2">
+                                    <img src="assets/images/arrowBefore.svg" alt="arrowBefore.svg" width="40px"
+                                        height="40px">
+                                </div>
+                                <div class="next" title="ذخیره و مرحله بعد" valu-next="2">
+                                    <img src="assets/images/arrowAfter.svg" alt="arrowAfter.svg" width="40px"
+                                        height="40px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form d-none" valu-tab="3">
+                            <div class="formheight">
+                                <div class="formuser formdesgine">
+                                    <div class="lbhead" title="ترابلشوتینگ">ترابلشوتینگ</div>
+                                    <div class="lbbody">
+                                        <div class="row mrow">
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext" title="عنوان">عنوان</div>
+                                                    <input type="text" class="form-control binput title3">
+                                                </div>
+                                            </div>
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext" title="تاریخ انجام">تاریخ انجام</div>
+                                                    <input type="text"
+                                                        class="form-control binput usage history date date3"
+                                                        placeholder="لطفا انتخاب کنید" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext" title="ایشوی مرتبط">ایشوی مرتبط</div>
+                                                    <input type="text" class="form-control binput related-issue2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="formmanager formdesgine mt-3">
+                                    <div class="lbhead" title="ارزیابی">ارزیابی</div>
+                                    <div class="lbbody">
+                                        <div class="row mrow">
+                                            <div class="padinput col-12">
+                                                <div class="rangeborder">
+                                                    <div class="rangediv">
+                                                        <div id="" class="range">
+                                                            <input class="input-range-1 ev-3" type="range" min="1"
+                                                                max="10" steps="1" value="1">
+                                                        </div>
+                                                        <ul class="range-labels labels-range-1">
+                                                            <li data-stop=1>1 </li>
+                                                            <li data-stop=2>2 </li>
+                                                            <li data-stop=3>3 </li>
+                                                            <li data-stop=4>4 </li>
+                                                            <li data-stop=5>5 </li>
+                                                            <li data-stop=6>6 </li>
+                                                            <li data-stop=7>7 </li>
+                                                            <li data-stop=8>8 </li>
+                                                            <li data-stop=9>9 </li>
+                                                            <li data-stop=10>10 </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput ">
+                                                    <div class="bftext" title="شاخص
+                                                ">شاخص</div>
+                                                    <select name="" id="" class="bselect form-control">
+                                                        <option value="" disabled selected hidden>لطفا انتخاب کنید
+                                                        </option>
+                                                        <option value="">تخصصی</option>
+                                                        <option value="">عمومی</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons mt-3">
+                                <div class="back" title="مرحله قبل" valu-back="3">
+                                    <img src="assets/images/arrowBefore.svg" alt="arrowBefore.svg" width="40px"
+                                        height="40px">
+                                </div>
+                                <div class="next" title="ذخیره و مرحله بعد" valu-next="3">
+                                    <img src="assets/images/arrowAfter.svg" alt="arrowAfter.svg" width="40px"
+                                        height="40px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form d-none" valu-tab="4">
+                            <div class="formheight">
+                                <div class="formuser formdesgine">
+                                    <div class="lbhead" title="جلسات ارائه‌">جلسات ارائه‌</div>
+                                    <div class="lbbody">
+                                        <div class="row mrow">
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext" title="عنوان">عنوان</div>
+                                                    <input type="text" class="form-control binput title4">
+                                                </div>
+                                            </div>
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext" title="تاریخ انجام">تاریخ انجام</div>
+                                                    <input type="text"
+                                                        class="form-control binput usage history date date4"
+                                                        placeholder="لطفا انتخاب کنید" readonly>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="formmanager formdesgine mt-3">
+                                    <div class="lbhead" title="ارزیابی">ارزیابی</div>
+                                    <div class="lbbody">
+                                        <div class="row mrow">
+                                            <div class="padinput col-12">
+                                                <div class="rangeborder">
+                                                    <div class="rangediv">
+                                                        <div id="" class="range">
+                                                            <input class="input-range-1 ev-4" type="range" min="1"
+                                                                max="10" steps="1" value="1">
+                                                        </div>
+                                                        <ul class="range-labels labels-range-1">
+                                                            <li data-stop=1>1 </li>
+                                                            <li data-stop=2>2 </li>
+                                                            <li data-stop=3>3 </li>
+                                                            <li data-stop=4>4 </li>
+                                                            <li data-stop=5>5 </li>
+                                                            <li data-stop=6>6 </li>
+                                                            <li data-stop=7>7 </li>
+                                                            <li data-stop=8>8 </li>
+                                                            <li data-stop=9>9 </li>
+                                                            <li data-stop=10>10 </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput ">
+                                                    <div class="bftext" title="شاخص
+                                            ">شاخص</div>
+                                                    <select name="" id="" class="bselect form-control">
+                                                        <option value="" disabled selected hidden>لطفا انتخاب کنید
+                                                        </option>
+                                                        <option value="">تخصصی</option>
+                                                        <option value="">عمومی</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons mt-3">
+                                <div class="back" title="مرحله قبل" valu-back="4">
+                                    <img src="assets/images/arrowBefore.svg" alt="arrowBefore.svg" width="40px"
+                                        height="40px">
+                                </div>
+                                <div class="next" title="ذخیره و مرحله بعد" valu-next="4">
+                                    <img src="assets/images/arrowAfter.svg" alt="arrowAfter.svg" width="40px"
+                                        height="40px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form d-none" valu-tab="5">
+                            <div class="formheight">
+                                <div class="formuser formdesgine">
+                                    <div class="lbhead" title="انجام یا مشارکت">انجام یا مشارکت</div>
+                                    <div class="lbbody">
+                                        <div class="row mrow">
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext" title="عنوان">عنوان</div>
+                                                    <input type="text" class="form-control binput title5">
+                                                </div>
+                                            </div>
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext" title="تاریخ انجام">تاریخ انجام</div>
+                                                    <input type="text"
+                                                        class="form-control binput usage history date date5"
+                                                        placeholder="لطفا انتخاب کنید" readonly>
+
+                                                </div>
+                                            </div>
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext" title="ایشوی مرتبط">ایشوی مرتبط</div>
+                                                    <input type="text" class="form-control binput related-issue3">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="formmanager formdesgine mt-3">
+                                    <div class="lbhead" title="ارزیابی">ارزیابی</div>
+                                    <div class="lbbody">
+                                        <div class="row mrow">
+                                            <div class="padinput col-12">
+                                                <div class="rangeborder">
+                                                    <div class="rangediv">
+                                                        <div id="" class="range">
+                                                            <input class="input-range-1 ev-5" type="range" min="1"
+                                                                max="10" steps="1" value="1">
+                                                        </div>
+                                                        <ul class="range-labels labels-range-1">
+                                                            <li data-stop=1>1 </li>
+                                                            <li data-stop=2>2 </li>
+                                                            <li data-stop=3>3 </li>
+                                                            <li data-stop=4>4 </li>
+                                                            <li data-stop=5>5 </li>
+                                                            <li data-stop=6>6 </li>
+                                                            <li data-stop=7>7 </li>
+                                                            <li data-stop=8>8 </li>
+                                                            <li data-stop=9>9 </li>
+                                                            <li data-stop=10>10 </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput ">
+                                                    <div class="bftext" title="شاخص
+                                                ">شاخص</div>
+                                                    <select name="" id="" class="bselect form-control">
+                                                        <option value="" disabled selected hidden>لطفا انتخاب کنید
+                                                        </option>
+                                                        <option value="">تخصصی</option>
+                                                        <option value="">عمومی</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons mt-3">
+                                <div class="back" title="مرحله قبل" valu-back="5">
+                                    <img src="assets/images/arrowBefore.svg" alt="arrowBefore.svg" width="40px"
+                                        height="40px">
+                                </div>
+                                <div class="next" title="ذخیره و مرحله بعد" valu-next="5">
+                                    <img src="assets/images/arrowAfter.svg" alt="arrowAfter.svg" width="40px"
+                                        height="40px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form d-none" valu-tab="6">
+                            <div class="formheight">
+                                <div class="formuser formdesgine">
+                                    <div class="lbhead" title="پیشنهادات و ارائه ها">
+                                        پیشنهادات و ارائه‌ها</div>
+                                    <div class="lbbody">
+                                        <div class="row mrow">
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext" title="عنوان">
+                                                        عنوان</div>
+                                                    <input type="text" class="form-control binput title6">
+                                                </div>
+                                            </div>
+
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext" title="تاریخ ارائه">تاریخ ارائه</div>
+                                                    <input type="text"
+                                                        class="form-control binput usage history date date6"
+                                                        placeholder="لطفا انتخاب کنید" readonly>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="formmanager formdesgine mt-3">
+                                    <div class="lbhead" title="ارزیابی">ارزیابی</div>
+                                    <div class="lbbody">
+                                        <div class="row mrow">
+                                            <div class="padinput col-12">
+                                                <div class="rangeborder">
+                                                    <div class="rangediv">
+                                                        <div id="" class="range">
+                                                            <input class="input-range-1 ev-6" type="range" min="1"
+                                                                max="10" steps="1" value="1">
+                                                        </div>
+                                                        <ul class="range-labels labels-range-1">
+                                                            <li data-stop=1>1 </li>
+                                                            <li data-stop=2>2 </li>
+                                                            <li data-stop=3>3 </li>
+                                                            <li data-stop=4>4 </li>
+                                                            <li data-stop=5>5 </li>
+                                                            <li data-stop=6>6 </li>
+                                                            <li data-stop=7>7 </li>
+                                                            <li data-stop=8>8 </li>
+                                                            <li data-stop=9>9 </li>
+                                                            <li data-stop=10>10 </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput ">
+                                                    <div class="bftext" title="شاخص
+                                                ">شاخص</div>
+                                                    <select name="" id="" class="bselect form-control">
+                                                        <option value="" disabled selected hidden>لطفا انتخاب کنید
+                                                        </option>
+                                                        <option value="">تخصصی</option>
+                                                        <option value="">عمومی</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons mt-3">
+                                <div class="back" title="مرحله قبل" valu-back="6">
+                                    <img src="assets/images/arrowBefore.svg" alt="arrowBefore.svg" width="40px"
+                                        height="40px">
+                                </div>
+                                <div class="next" title="ذخیره و مرحله بعد" valu-next="6">
+                                    <img src="assets/images/arrowAfter.svg" alt="arrowAfter.svg" width="40px"
+                                        height="40px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form d-none" valu-tab="7">
+                            <div class="formheight">
+                                <div class="formuser formdesgine">
+                                    <div class="lbhead" title="Traning">Traning
+                                    </div>
+                                    <div class="lbbody">
+                                        <div class="row mrow">
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext" title="عنوان">
+                                                        عنوان</div>
+                                                    <input type="text" class="form-control binput title7">
+                                                </div>
+                                            </div>
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput">
+                                                    <div class="bftext" title="تاریخ انجام">تاریخ
+                                                        انجام
+                                                    </div>
+                                                    <!-- <label for="" class="blabel usage">لطفا
+                                                        انتخاب
+                                                        کنید</label> -->
+                                                    <input type="text"
+                                                        class="form-control binput usage history date date7"
+                                                        placeholder="لطفا انتخاب کنید" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="formmanager formdesgine mt-3">
+                                    <div class="lbhead" title="ارزیابی">ارزیابی</div>
+                                    <div class="lbbody">
+                                        <div class="row mrow">
+                                            <div class="padinput col-12">
+                                                <div class="rangeborder">
+                                                    <div class="rangediv">
+                                                        <div id="" class="range">
+                                                            <input class="input-range-1 ev-7" type="range" min="1"
+                                                                max="10" steps="1" value="1">
+                                                        </div>
+                                                        <ul class="range-labels labels-range-1">
+                                                            <li data-stop=1>1 </li>
+                                                            <li data-stop=2>2 </li>
+                                                            <li data-stop=3>3 </li>
+                                                            <li data-stop=4>4 </li>
+                                                            <li data-stop=5>5 </li>
+                                                            <li data-stop=6>6 </li>
+                                                            <li data-stop=7>7 </li>
+                                                            <li data-stop=8>8 </li>
+                                                            <li data-stop=9>9 </li>
+                                                            <li data-stop=10>10 </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="padinput col-lg-3 col-md-6 col-12">
+                                                <div class="pinput ">
+                                                    <div class="bftext" title="شاخص
+                                                    ">شاخص</div>
+                                                    <select name="" id="" class="bselect form-control">
+                                                        <option value="" disabled selected hidden>لطفا انتخاب کنید
+                                                        </option>
+                                                        <option value="">تخصصی</option>
+                                                        <option value="">عمومی</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons mt-3 justify-content-between">
+                                <div class="back" title="مرحله قبل" valu-back="7">
+                                    <img src="assets/images/arrowBefore.svg" alt="arrowBefore.svg" width="40px"
+                                        height="40px">
+                                </div>
+                                <div class="next" title="ذخیره فرم" valu-next="7">
+                                    <img src="assets/images/arrowDone.svg" alt="arrowDone.svg" width="40px"
+                                        height="40px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- scripts start -->
+<script src="assets/plagin/jquery/jquery-3.6.1.min.js"></script>
+<script src="assets/plagin/bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/plagin/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+<script src="assets/plagin/persianDatepicker-master/js/persianDatepicker.js"></script>
+<script src="assets/plagin/range-slider-stop/assets/js/slider.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/scriptfunctionalform.js"></script>
+<!-- scripts end -->
+
+</html>

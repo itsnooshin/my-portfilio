@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: #f6f6f6;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    direction: rtl;
+    font-family: iransans;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.full-height {
+    min-height: calc(100% - 110px);
+    padding-top: 16px;
+}
+
+
+.HRISSecond #DeltaPlaceHolderMain {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+

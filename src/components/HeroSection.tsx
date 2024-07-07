@@ -41,11 +41,11 @@ export default function HeroSection() {
         </div>
 
         <div className="flex flex-col items-center mt-5  justify-center  ">
-          <h2 className="  text-[1.9rem] md:text-[2.5rem]  font-recoleta">
+          <h2 className="  text-[1.9rem] md:text-[2.5rem] font-[500]">
             I&apos;m <span className=" text-[#8470b4]">Nooshin</span>
           </h2>
           <div className=" relative  flex  text-center">
-            <h2 className="  text-[1.6rem] md:px-10 px-10  md:text-[2.5rem] font-recoleta md:w-full   ">
+            <h2 className="  text-[1.6rem] md:text-[2.5rem]  md:px-10 px-10  font-[500] md:w-full   ">
               A front End Developer
             </h2>
 
@@ -59,7 +59,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <p className=" pt-14 md:text-center md:w-[70%] mx-auto text-center w-[100%] md:text-[1.2rem]">
+        <p className=" md:text-center text-[1.2rem] mt-6 mb-3 md:mt-6 md:w-[70%] mx-auto text-center w-[100%] md:text-[1.2rem]">
           front-end developer skilled in <strong>JavaScript</strong>,{" "}
           <strong> Reactjs</strong> , and <strong>Next.js</strong> , seeking a
           collaborative environment to create user-friendly web applications.
@@ -67,7 +67,7 @@ export default function HeroSection() {
           problem-solving and adaptability.
         </p>
 
-        <div className=" flex gap-10 items-center md:mt-24 mt-10 justify-center ">
+        <div className=" flex gap-10 items-center md:mt-6 mt-6 justify-center ">
           <Link href={"https://github.com/itsnooshin"}>
             <FiGithub size={"20px"} />
           </Link>
@@ -87,7 +87,7 @@ export default function HeroSection() {
           <button className=" bg-[#9370B4] px-4 md:text-[1.1rem]  p-3 md:py-2 md:px-5 rounded-full text-white">
             Contact me here <span>&#8594;</span>
           </button>
-          <button className="  bg-white p-3 md:py-2 md:text-[1.1rem] md:px-5 rounded-full text-black shadow-2xl border">
+          <button className="bg-white p-3 md:py-2 md:text-[1.1rem] md:px-5 rounded-full text-black shadow-2xl border">
             Download Resume
             <span className=" pl-1">&#8595;</span>
           </button>

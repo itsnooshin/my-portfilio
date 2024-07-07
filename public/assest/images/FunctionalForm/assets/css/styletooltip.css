@@ -1,0 +1,24 @@
+.tooltip-text {
+  visibility: hidden;
+  background-color: rgb(30, 83, 64);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 22;
+  font-size: 12px;
+  font-weight: normal;
+  right: 115%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: -8px;
+}
+
+.menuitem:hover .tooltip-text {
+  visibility: visible;
+}
+
+.menuheader:hover .tooltip-text {
+  visibility: visible;
+}

@@ -1,24 +1,11 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import localfont from "next/font/local";
 import "./globals.css";
 
-const roboto = Roboto({
+const roboto = Space_Grotesk({
   subsets: ["latin"],
-  weight: ["400", "700"],
-  display: "swap",
-});
-
-// add local font
-const recoleta = localfont({
-  src: [
-    {
-      path: "../../public/fonts/RecoletaAlt-Regular.woff2",
-      weight: "400",
-      style: "normal",
-    },
-  ],
-  variable: "--font-recoleta",
+  weight: ["400", "500", "700"],
   display: "swap",
 });
 
@@ -34,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${recoleta.variable}   ${roboto.className}`}>{children}</body>
+      <body className={` ${roboto.className}`}>{children}</body>
     </html>
   );
 }

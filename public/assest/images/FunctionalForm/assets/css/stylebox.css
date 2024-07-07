@@ -1,0 +1,182 @@
+.mainbox {
+    margin-right: 16px;
+    margin-left: 16px;
+    border-radius: 10px;
+    background-color: white;
+    min-height: 100%;
+}
+
+a {
+    color: #2a2a2a;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #2a2a2a;
+}
+
+.boxhead {
+    width: 100%;
+    padding: 16px;
+    text-align: right;
+    border-bottom: 1px solid #ebebeb;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #2a2a2a;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxbody {
+    display: flex;
+    padding: 16px;
+}
+
+.rightbody {
+    width: 189px;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.rbitem {
+    display: flex;
+    padding-left: 16px;
+    padding-bottom: 35px;
+}
+
+.bbnum {
+    width: 21px;
+    height: 21px;
+    box-shadow: 0 2px 10px 4px var(--black-7);
+    background-color: #bababa;
+    text-align: center;
+    border-radius: 100%;
+    z-index: 1;
+    position: relative;
+    /* margin-bottom: 40px; */
+    cursor: no-drop;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+@keyframes example {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.15;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+.active {
+    animation: 2s infinite example;
+    background-color: #f68b1f;
+    cursor: pointer;
+}
+
+.done {
+    background-color: #005d34;
+    cursor: pointer;
+}
+
+.activeline {
+    background-color: #f68b1f !important;
+}
+
+.doneline {
+    background-color: #005d34 !important;
+}
+
+.rbitem:last-child .bbnum {
+    margin-bottom: 0px;
+}
+
+.bbtext {
+    color: #bababa;
+    cursor: no-drop;
+    margin-right: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 144px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.textactive {
+    color: #f68b1f;
+    cursor: pointer;
+}
+
+.textdone {
+    color: #005d34;
+    cursor: pointer;
+}
+
+.bbline {
+    width: 1px;
+    height: 40px;
+    background-color: #bababa;
+    position: absolute;
+    margin-top: 21px;
+    margin-right: 10.5px;
+}
+
+.rbitem:last-child .bbline {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .boxbody {
+        display: block;
+
+    }
+
+    .rightbody {
+        display: flex;
+        margin-bottom: 16px;
+    }
+
+    .rbitem {
+        display: block;
+        margin-left: 46px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+
+    .rbitem:last-child {
+        margin-left: 0px;
+    }
+
+    .bbnum {
+        margin-bottom: 8px;
+    }
+
+    .bbtext {
+        display: none;
+    }
+
+    .bbline {
+        width: 58px;
+        height: 1px;
+        margin-top: -18px;
+        margin-right: 21px;
+    }
+
+}

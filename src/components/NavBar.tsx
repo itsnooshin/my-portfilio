@@ -7,7 +7,7 @@ import { MdGite, MdSegment } from "react-icons/md";
 export default function NavBar() {
   return (
     <>
-      <div className="lg:hidden flex  items-center justify-between  ">
+      <div className="lg:hidden flex   items-center justify-between  ">
         <Image
           src={IconLogoBlack}
           width={35}
@@ -25,7 +25,13 @@ export default function NavBar() {
         </button>
       </div>
 
-      <div className=" hidden lg:flex border shadow-2xl w-[900px] mx-auto  mb-4 bg-white items-center justify-between  rounded-full text-slate-600 ">
+      <div
+        style={{
+          backgroundColor: "rgba(255, 255, 255, 0.40)",
+          backdropFilter: "blur(47.5px) ",
+        }}
+        className=" hidden lg:flex border sticky top-8 z-50 shadow-2xl w-[900px] mx-auto  mb-7 bg-white items-center justify-between  rounded-full text-slate-600 "
+      >
         <nav>
           <ul className="flex px-3 gap-10 py-2 ">
             <li className="py-3  rounded-3xl px-6 bg-[#8470b4] text-white">

@@ -1,0 +1,271 @@
+.leftbody {
+    width: calc(100% - 189px);
+
+}
+
+.formdesgine {
+    box-shadow: 0 2px 10px 4px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+
+}
+
+.lbhead {
+    padding: 16px;
+    max-width: 100%;
+    text-align: right;
+    border-bottom: 1px solid #ebebeb;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.formheight {
+    min-height: 530px;
+}
+
+.formuser:nth-child(1) .lbhead {
+    color: #bababa;
+}
+
+.formmodir:nth-child(2) .lbhead {
+    color: #bababa;
+}
+
+.lbbody {
+    padding-top: 16px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.mrow {
+    margin: 0px;
+}
+
+.padinput {
+    margin-bottom: 16px;
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+}
+
+.pinput {
+    position: relative;
+}
+
+.bftext {
+    text-align: right;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #2a2a2a;
+    max-width: -webkit-fill-available;
+    width: fit-content;
+}
+
+.binput {
+    height: 35px;
+    border-radius: 10px;
+    border: solid 1px #bababa !important;
+    font-size: 12px;
+    font-weight: normal;
+    outline: none !important;
+    padding: 5px 13px !important;
+}
+
+.binput:focus {
+    border: solid 1px #bababa;
+    box-shadow: none;
+}
+
+.history {
+    background-image: url(../images/Shopicons_Regular_Calendar.svg);
+    background-repeat: no-repeat;
+    background-position: 11px 50%;
+    cursor: pointer;
+}
+
+.bselect {
+    height: 35px;
+    border-radius: 10px;
+    border: solid 1px #bababa;
+    font-size: 12px;
+    font-weight: normal;
+    outline: none !important;
+    cursor: pointer;
+}
+
+.bselect:focus {
+    border: solid 1px #bababa;
+    box-shadow: none;
+}
+
+.blabel {
+    position: absolute;
+    width: -webkit-fill-available;
+    display: block;
+    padding: 8px 13px;
+    text-align: right;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.next {
+    cursor: pointer;
+}
+
+.back {
+    cursor: pointer;
+}
+
+input:read-only {
+    background-color: #fff !important;
+}
+
+
+.searchdiv {
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 4px rgba(0, 0, 0, 0.07);
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+}
+
+.scrollsearch {
+    overflow-y: auto;
+    max-height: 200px;
+
+}
+
+.scrollsearch::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scrollsearch::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+}
+
+.scrollsearch::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #8a8a8a;
+}
+
+.subsearch {
+    display: flex;
+    background: #fff;
+    text-align: right;
+    border-top: 1px solid #bababa;
+    cursor: pointer;
+}
+
+.subsearch:first-child {
+    border: none;
+}
+
+.searchright {
+    display: flex;
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+}
+
+.searchitem {
+    display: flex;
+    flex-direction: column;
+    padding: 8px !important;
+}
+
+.searchitem:nth-child(1) .searchi:nth-child(2) {
+    color: #bababa;
+}
+
+.searchicon {
+    margin: auto;
+}
+
+.searchicon img {
+    border-radius: 100%;
+}
+
+.searcht {
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin: auto 0px;
+}
+
+.sname {
+    margin-bottom: 4px;
+    margin-right: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sjob {
+    color: #bababa;
+    margin-top: 4px;
+    margin-right: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.search {
+    background-image: url(../image/search.svg);
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    padding-right: 33px !important;
+}
+
+.searchi {
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: calc(100% - 28px);
+    margin: auto;
+    text-align: left !important;
+}
+
+.searchimg {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.backnone {
+    visibility: hidden;
+}
+
+.doneform {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .leftbody {
+        width: 100%;
+    }
+
+    .formheight {
+        min-height: 691px;
+    }
+}

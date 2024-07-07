@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>جدول فرم عملکردی</title>
+  <link rel="stylesheet" href="assets/plagin/bootstrap-4.5.3-dist/css/bootstrap-reboot.min.css" />
+  <link rel="stylesheet" href="assets/plagin/bootstrap-4.5.3-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/fonts/font.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/stylemenu.css" />
+  <link rel="stylesheet" href="assets/css/styletooltip.css" />
+  <link rel="stylesheet" href="assets/css/styleboxtable.css" />
+  <link rel="stylesheet" href="assets/css/styletable.css" />
+  <link rel="stylesheet" href="assets/css/stylemodal.css" />
+</head>
+
+<body class="body">
+  <div class="full-height">
+    <!-- hamburger button -->
+    <div class="d-block d-md-none d-lg-none hamburgerbutton" onclick="menumob()">
+      <img src="assets/images/Shopicons_Regular_Chapters.svg" alt="Shopicons_Regular_Chapters.svg" />
+    </div>
+    <!-- menu -->
+    <div class="menusection">
+      <div class="menuback" id="menu-mob">
+        <div class="menu d-none d-md-block d-lg-block" id="menu2">
+          <div class="menuheader">
+            <div class="menuimg" id="menuimg">
+              <img src="assets/images/Shopicons_Bold_Grid.svg" alt="Shopicons_Bold_Grid.svg" class="firstbutton"
+                onclick="mymenu()" />
+              <img src="assets/images/Shopicons_Bold_Grid.svg" alt="Shopicons_Bold_Grid.svg" class="d-none secondbutton"
+                onclick="mymenuoff()" />
+            </div>
+            <div class="menuheadtext d-none">سامانه lms</div>
+            <span class="tooltip-text">سامانه lms</span>
+          </div>
+          <div class="menubody">
+            <a href="#" class="menuitem">
+              <div class="menuii">
+                <img src="assets/images/🦆 icon _copy_.svg" alt="🦆 icon _copy_.svg" />
+              </div>
+              <div class="menubodytext d-none">آموزش های من</div>
+              <div class="tooltip-text">آموزش های من</div>
+            </a>
+            <a href="#" class="menuitem">
+              <div class="menuii">
+                <img src="assets/images/🦆 icon _newspaper_.svg" alt="🦆 icon _newspaper_.svg" />
+              </div>
+              <div class="menubodytext d-none">ارزشیابی دوره ها</div>
+              <div class="tooltip-text">ارزشیابی دوره ها</div>
+            </a>
+            <a href="#" class="menuitem">
+              <div class="menuii">
+                <img src="assets/images/medical-icon_i-health-education.svg"
+                  alt="medical-icon_i-health-education.svg" />
+              </div>
+              <div class="menubodytext d-none">پنل رویداد تیمی</div>
+              <div class="tooltip-text">پنل رویداد تیمی</div>
+            </a>
+            <a href="#" class="menuitem activemenu">
+              <div class="menuii">
+                <img src="assets/images/Group 626.svg" alt="Group 626.svg" />
+              </div>
+              <div class="menubodytext d-none">کارتابل</div>
+              <div class="tooltip-text">کارتابل</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end menu -->
+    <!-- box -->
+    <div class="basebox">
+      <div class="baseboxhead">
+        <div>
+          <img src="assets/images/gozaresh.svg" alt="gozaresh.svg" />
+        </div>
+        <div class="bbhtext">جدول فرم عملکرد فنی</div>
+        <div>
+          <img src="assets/images/infoicon.svg" alt="infoicon.svg" />
+        </div>
+      </div>
+      <div class="baseboxbody">
+        <div class="row mrow">
+          <div class="padinput col-lg-4 col-md-6 col-7">
+            <div class="pinput">
+              <input type="text" class="form-control binput search" placeholder="جستجو بر اساس..." />
+            </div>
+          </div>
+          <a href="FunctionalFormadd.html" class="newbutton">
+            <div>ثبت مورد جدید</div>
+          </a>
+        </div>
+        <div class="updivtable">
+          <div class="rightdivtable">
+            <div>نمایش</div>
+            <div>
+              <select name="" id="" class="selecttable form-control">
+                <option value="3">۳</option>
+                <option value="5">۵</option>
+                <option value="10" selected>۱۰</option>
+              </select>
+            </div>
+            <div>مورد</div>
+          </div>
+          <div class="leftdivtable">
+            <div>تعداد کل : 23</div>
+            <div class="tableimg">
+              <img src="assets/images/vscode-icons_file-type-excel.svg" alt="vscode-icons_file-type-excel.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="boardtable">
+          <div class="table-responsive">
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th class="widthth">ردیف</th>
+                  <th>نام نام خانوادگی</th>
+                  <th>نام دوره</th>
+                  <th>جایگاه سازمانی</th>
+                  <th>کانال آموزش</th>
+                  <th>وضعیت بررسی</th>
+                  <th class="tablesticky">عملیات</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="td border-0 tablenum">1</td>
+                  <td class="td border-0">مرضیه کرمی</td>
+                  <td class="td border-0">ویراستاری</td>
+                  <td class="td border-0">کارشناس فناوری
+                    اطلاعات
+                  </td>
+                  <td class="td border-0">توافق نامه</td>
+                  <td class="td border-0">
+                    <div class="tablestate">
+                      <div>
+                        تایید شده
+                      </div>
+                    </div>
+                  </td>
+                  <td class="tabledetail border-0 tablesticky">
+                    <div class="tabledetailimg">
+                      <a href="FunctionalFormadd.html" class="tdimg">
+                        <img src="assets/images/showicon.svg" alt="showicon.svg">
+                      </a>
+                      <a href="FunctionalFormadd.html" class="tdimg">
+                        <img src="assets/images/edit.svg" alt="edit.svg">
+                      </a>
+                      <div data-toggle="modal" data-target="#my-modal" class="tdimg">
+                        <img src="assets/images/delete.svg" alt="delete.svg">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td border-0 tablenum">2</td>
+                  <td class="td border-0">مرضیه کرمی</td>
+                  <td class="td border-0">ویراستاری</td>
+                  <td class="td border-0">کارشناس فناوری
+                    اطلاعات
+                  </td>
+                  <td class="td border-0">توافق نامه</td>
+                  <td class="td border-0">
+                    <div class="tablestate">
+                      <div>
+                        تایید شده
+                      </div>
+                    </div>
+                  </td>
+                  <td class="tabledetail border-0 tablesticky">
+                    <div class="tabledetailimg">
+                      <a href="FunctionalFormadd.html" class="tdimg">
+                        <img src="assets/images/showicon.svg" alt="showicon.svg">
+                      </a>
+                      <a href="FunctionalFormadd.html" class="tdimg">
+                        <img src="assets/images/edit.svg" alt="edit.svg">
+                      </a>
+                      <div data-toggle="modal" data-target="#my-modal" class="tdimg">
+                        <img src="assets/images/delete.svg" alt="delete.svg">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td border-0 tablenum">3</td>
+                  <td class="td border-0">مرضیه کرمی</td>
+                  <td class="td border-0">ویراستاری</td>
+                  <td class="td border-0">کارشناس فناوری
+                    اطلاعات
+                  </td>
+                  <td class="td border-0">توافق نامه</td>
+                  <td class="td border-0">
+                    <div class="tablestate">
+                      <div>
+                        تایید شده
+                      </div>
+                    </div>
+                  </td>
+                  <td class="tabledetail border-0 tablesticky">
+                    <div class="tabledetailimg">
+                      <a href="FunctionalFormadd.html" class="tdimg">
+                        <img src="assets/images/showicon.svg" alt="showicon.svg">
+                      </a>
+                      <a href="FunctionalFormadd.html" class="tdimg">
+                        <img src="assets/images/edit.svg" alt="edit.svg">
+                      </a>
+                      <div data-toggle="modal" data-target="#my-modal" class="tdimg">
+                        <img src="assets/images/delete.svg" alt="delete.svg">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td border-0 tablenum">4</td>
+                  <td class="td border-0">مرضیه کرمی</td>
+                  <td class="td border-0">ویراستاری</td>
+                  <td class="td border-0">کارشناس فناوری
+                    اطلاعات
+                  </td>
+                  <td class="td border-0">توافق نامه</td>
+                  <td class="td border-0">
+                    <div class="tablestate">
+                      <div>
+                        تایید شده
+                      </div>
+                    </div>
+                  </td>
+                  <td class="tabledetail border-0 tablesticky">
+                    <div class="tabledetailimg">
+                      <a href="FunctionalFormadd.html" class="tdimg">
+                        <img src="assets/images/showicon.svg" alt="showicon.svg">
+                      </a>
+                      <a href="FunctionalFormadd.html" class="tdimg">
+                        <img src="assets/images/edit.svg" alt="edit.svg">
+                      </a>
+                      <div data-toggle="modal" data-target="#my-modal" class="tdimg">
+                        <img src="assets/images/delete.svg" alt="delete.svg">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td border-0 tablenum">5</td>
+                  <td class="td border-0">مرضیه کرمی</td>
+                  <td class="td border-0">ویراستاری</td>
+                  <td class="td border-0">کارشناس فناوری
+                    اطلاعات
+                  </td>
+                  <td class="td border-0">توافق نامه</td>
+                  <td class="td border-0">
+                    <div class="tablestate">
+                      <div>
+                        تایید شده
+                      </div>
+                    </div>
+                  </td>
+                  <td class="tabledetail border-0 tablesticky">
+                    <div class="tabledetailimg">
+                      <a href="FunctionalFormadd.html" class="tdimg">
+                        <img src="assets/images/showicon.svg" alt="showicon.svg">
+                      </a>
+                      <a href="FunctionalFormadd.html" class="tdimg">
+                        <img src="assets/images/edit.svg" alt="edit.svg">
+                      </a>
+                      <div data-toggle="modal" data-target="#my-modal" class="tdimg">
+                        <img src="assets/images/delete.svg" alt="delete.svg">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td border-0 tablenum">6</td>
+                  <td class="td border-0">مرضیه کرمی</td>
+                  <td class="td border-0">ویراستاری</td>
+                  <td class="td border-0">کارشناس فناوری
+                    اطلاعات
+                  </td>
+                  <td class="td border-0">توافق نامه</td>
+                  <td class="td border-0">
+                    <div class="tablestate">
+                      <div>
+                        تایید شده
+                      </div>
+                    </div>
+                  </td>
+                  <td class="tabledetail border-0 tablesticky">
+                    <div class="tabledetailimg">
+                      <a href="FunctionalFormadd.html" class="tdimg">
+                        <img src="assets/images/showicon.svg" alt="showicon.svg">
+                      </a>
+                      <a href="FunctionalFormadd.html" class="tdimg">
+                        <img src="assets/images/edit.svg" alt="edit.svg">
+                      </a>
+                      <div data-toggle="modal" data-target="#my-modal" class="tdimg">
+                        <img src="assets/images/delete.svg" alt="delete.svg">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td border-0 tablenum">7</td>
+                  <td class="td border-0">مرضیه کرمی</td>
+                  <td class="td border-0">ویراستاری</td>
+                  <td class="td border-0">کارشناس فناوری
+                    اطلاعات
+                  </td>
+                  <td class="td border-0">توافق نامه</td>
+                  <td class="td border-0">
+                    <div class="tablestate">
+                      <div>
+                        تایید شده
+                      </div>
+                    </div>
+                  </td>
+                  <td class="tabledetail border-0 tablesticky">
+                    <div class="tabledetailimg">
+                      <a href="FunctionalFormadd.html" class="tdimg">
+                        <img src="assets/images/showicon.svg" alt="showicon.svg">
+                      </a>
+                      <a href="FunctionalFormadd.html" class="tdimg">
+                        <img src="assets/images/edit.svg" alt="edit.svg">
+                      </a>
+                      <div data-toggle="modal" data-target="#my-modal" class="tdimg">
+                        <img src="assets/images/delete.svg" alt="delete.svg">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td border-0 tablenum">8</td>
+                  <td class="td border-0">مرضیه کرمی</td>
+                  <td class="td border-0">ویراستاری</td>
+                  <td class="td border-0">کارشناس فناوری
+                    اطلاعات
+                  </td>
+                  <td class="td border-0">توافق نامه</td>
+                  <td class="td border-0">
+                    <div class="tablestate">
+                      <div>
+                        تایید شده
+                      </div>
+                    </div>
+                  </td>
+                  <td class="tabledetail border-0 tablesticky">
+                    <div class="tabledetailimg">
+                      <a href="FunctionalFormadd.html" class="tdimg">
+                        <img src="assets/images/showicon.svg" alt="showicon.svg">
+                      </a>
+                      <a href="FunctionalFormadd.html" class="tdimg">
+                        <img src="assets/images/edit.svg" alt="edit.svg">
+                      </a>
+                      <div data-toggle="modal" data-target="#my-modal" class="tdimg">
+                        <img src="assets/images/delete.svg" alt="delete.svg">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td border-0 tablenum">9</td>
+                  <td class="td border-0">مرضیه کرمی</td>
+                  <td class="td border-0">ویراستاری</td>
+                  <td class="td border-0">کارشناس فناوری
+                    اطلاعات
+                  </td>
+                  <td class="td border-0">توافق نامه</td>
+                  <td class="td border-0">
+                    <div class="tablestate">
+                      <div>
+                        تایید شده
+                      </div>
+                    </div>
+                  </td>
+                  <td class="tabledetail border-0 tablesticky">
+                    <div class="tabledetailimg">
+                      <a href="FunctionalFormadd.html" class="tdimg">
+                        <img src="assets/images/showicon.svg" alt="showicon.svg">
+                      </a>
+                      <a href="FunctionalFormadd.html" class="tdimg">
+                        <img src="assets/images/edit.svg" alt="edit.svg">
+                      </a>
+                      <div data-toggle="modal" data-target="#my-modal" class="tdimg">
+                        <img src="assets/images/delete.svg" alt="delete.svg">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td border-0 tablenum">10</td>
+                  <td class="td border-0">مرضیه کرمی</td>
+                  <td class="td border-0">ویراستاری</td>
+                  <td class="td border-0">کارشناس فناوری
+                    اطلاعات
+                  </td>
+                  <td class="td border-0">توافق نامه</td>
+                  <td class="td border-0">
+                    <div class="tablestate">
+                      <div>
+                        تایید شده
+                      </div>
+                    </div>
+                  </td>
+                  <td class="tabledetail border-0 tablesticky">
+                    <div class="tabledetailimg">
+                      <a href="FunctionalFormadd.html" class="tdimg">
+                        <img src="assets/images/showicon.svg" alt="showicon.svg">
+                      </a>
+                      <a href="FunctionalFormadd.html" class="tdimg">
+                        <img src="assets/images/edit.svg" alt="edit.svg">
+                      </a>
+                      <div data-toggle="modal" data-target="#my-modal" class="tdimg">
+                        <img src="assets/images/delete.svg" alt="delete.svg">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal delete-->
+  <div class="modal fade" id="my-modal" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content modalc">
+        <div class="modal-header modalh">
+          <div class="modal-title modalt">
+            <div class="d-flex">
+              <div class="deletewidth"><img src="assets/images/delete.svg" alt="delete.svg"></div>
+              <div class="mhtext">حذف مسیر آموزش</div>
+            </div>
+            <div class="mhimg" data-dismiss="modal">
+              <img src="assets/images/_.svg" alt="_.svg" title="بستن">
+            </div>
+          </div>
+        </div>
+        <div class="modal-body modalb">
+          <div class="modalparent">
+            <div class="mbimg">
+              <img src="assets/images/mdi_file-document-delete-outline.svg" alt="mdi_file-document-delete-outline.svg">
+            </div>
+            <div class="mbtext">آیا از حذف <span id="modal-title"></span> اطمینان درید ؟</div>
+          </div>
+          <div class="modalbutton">
+            <div class="modalflex">
+              <button class="modalbitem" data-dismiss="modal">انصراف</button>
+              <button class="modalbitem" data-dismiss="modal">ثبت</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+<script src="assets/plagin/jquery/jquery-3.6.1.min.js"></script>
+<script src="assets/plagin/bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/plagin/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+<script src="assets/js/scriptmenu.js"></script>
+
+</html>

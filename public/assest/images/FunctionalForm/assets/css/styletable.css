@@ -1,0 +1,173 @@
+.table {
+    min-width: 1745px;
+    margin-bottom: 0px;
+    table-layout: fixed;
+
+}
+
+.boardtable {
+    border-radius: 15px;
+    border: 1px solid #c9c9c9;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 10px 4px rgba(0, 0, 0, 0.07);
+}
+
+thead {
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #8a8a8a;
+    background-color: #f6f6f5;
+}
+
+.table thead th {
+    border-top: none;
+    padding: 8px 24px;
+    text-align: right;
+    border-bottom: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    max-width: 300px;
+}
+
+/* .table thead th:last-child {
+    padding: 13px 23px;
+    background-color: #f6f6f5;
+} */
+
+.table td {
+    padding: 13px 24px;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: 1px solid #f0f0f1 !important;
+    font-size: 12px;
+    max-width: 300px;
+}
+
+table tr:last-child td {
+    border-bottom: 0px !important;
+}
+
+.tabledetail {
+    justify-content: flex-start;
+    /* padding: 13px 23px !important; */
+}
+
+.tabledetailimg {
+    display: flex;
+    justify-content: center;
+}
+
+.tabledetailimg img {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+tbody {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #565656;
+}
+
+/* tbody tr:hover {
+    background-color: #defff440;
+} */
+
+.tablenum {
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #565656;
+    padding: 13px 29px !important;
+}
+
+.table-responsive::-webkit-scrollbar {
+    width: 5px;
+    height: 5px
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background-color: #f0f0f1;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #8a8a8a;
+}
+
+.tablestate {
+    width: 71px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.07);
+    background-color: #f4fffa;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #005d34;
+    text-align: center;
+}
+
+.widthth {
+    width: 80px;
+}
+
+th:last-child {
+    width: 100px;
+}
+
+.tablesticky {
+    position: sticky;
+    left: 0px;
+    background-color: #f6f6f5;
+}
+
+.tdimg {
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.tdimg:nth-child(1) {
+    margin-right: 0px;
+    margin-left: 8px;
+}
+
+.tdimg:last-child {
+    margin-left: 0px;
+    margin-right: 8px;
+}
+
+td:last-child {
+    position: sticky;
+    left: 0;
+    background-color: white;
+}

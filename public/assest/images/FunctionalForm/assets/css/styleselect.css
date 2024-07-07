@@ -1,0 +1,263 @@
+/*the container must be positioned relative:*/
+.custom-select22 {
+    /* position: relative; */
+    /* font-family: Arial; */
+    /* direction: rtl; */
+}
+
+.custom-select22 select {
+    display: none;
+    /*hide original SELECT element:*/
+}
+
+.select-selected {
+    background-color: white;
+    border: solid 1px #bababa !important;
+    border-radius: 10px;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 48px;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #000 transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #000 transparent;
+    top: 41px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    color: #495057;
+    user-select: none;
+    /* width: 100%; */
+    font-size: 12px;
+    font-weight: normal;
+    outline: none !important;
+    cursor: pointer;
+    text-align: right;
+    font-family: 'IRANSans';
+    direction: rtl !important;
+}
+
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    color: #495057;
+    z-index: 99;
+    /* direction: rtl; */
+    border: solid 1px #bababa !important;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+/* loader */
+
+.loaderCu {
+    display: none;
+    position: fixed;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.6) !important;
+
+}
+
+.showloader {
+    display: flex !important;
+}
+
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    width: 142px;
+    height: 142px;
+}
+
+.lds-ripple .loadingLds {
+    position: absolute;
+    border: 5px solid #014829;
+    opacity: 1;
+    border-radius: 50%;
+    z-index: 9999;
+    animation: lds-ripple 1.2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.loadingLdstow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 6px solid #288b67;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    width: 160px;
+    height: 160px;
+    animation: spin 2s ease infinite;
+}
+
+.lds-ripple .loadingLds:nth-child(2) {
+    animation-delay: -0.5s;
+    border: 4px solid #ff8000;
+
+}
+
+.Donemark::after,
+.Donemark::after {
+    height: calc(var(--checkbox-height) / 2);
+    -moz-animation: dothabottomcheck-19 0.2s ease 0s forwards;
+    -o-animation: dothabottomcheck-19 0.2s ease 0s forwards;
+    -webkit-animation: dothabottomcheck-19 0.2s ease 0s forwards;
+    animation: dothabottomcheck-19 0.2s ease 0s forwards;
+}
+
+.Donemark::before,
+.Donemark::before {
+    height: calc(var(--checkbox-height) * 1.2);
+    -moz-animation: dothatopcheck-19 0.4s ease 0s forwards;
+    -o-animation: dothatopcheck-19 0.4s ease 0s forwards;
+    -webkit-animation: dothatopcheck-19 0.4s ease 0s forwards;
+    animation: dothatopcheck-19 0.4s ease 0s forwards;
+}
+
+.Donemark::before,
+.Donemark::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    height: 0;
+    width: calc(var(--checkbox-height) * .2);
+    background-color: #ff8102;
+    display: inline-block;
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    border-radius: 5px;
+    content: " ";
+    -webkit-transition: opacity ease 0.5;
+    -moz-transition: opacity ease 0.5;
+    transition: opacity ease 0.5;
+}
+
+.Donemark::before {
+    --checkbox-height: 65px;
+    top: calc(50% + 10px);
+    left: 50%;
+    box-shadow: 0 0 0 calc(var(--checkbox-height) * .05) var(--background-color);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    content: "";
+    z-index: 1000;
+}
+
+.Donemark::after {
+    --checkbox-height: 65px;
+    top: calc(50% - 10px);
+    left: calc(50% + -27px);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    content: "";
+    z-index: 1000;
+
+}
+
+@keyframes lds-ripple {
+    0% {
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    4.9% {
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    5% {
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 142px;
+        height: 142px;
+        opacity: 0;
+    }
+}
+
+@keyframes spin {
+    50% {
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+@keyframes dothabottomcheck-19 {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: calc(var(--checkbox-height) / 2);
+    }
+}
+
+@keyframes dothatopcheck-19 {
+    0% {
+        height: 0;
+    }
+
+    50% {
+        height: 0;
+    }
+
+    100% {
+        height: calc(var(--checkbox-height) * 1.2);
+    }
+}
