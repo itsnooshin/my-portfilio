@@ -20,17 +20,18 @@ export default function AboutMe() {
           <div className="  md:flex flex gap-6 md:flex-row   flex-col items-center justify-center md:items-center  md:justify-between">
             <div className=" md:w-[55%] w-[100%]">
               <p className="pb-5 text-center text-[1rem] w-[100%] md:text-left md:text-[1.2rem]">
-                I'm Nooshin, a frontend developer deeply passionate about Code.
-                Starting my journey in 2022, I've been fully immersed in web
-                development, crafting digital products that blend creativity
-                with functionality. I've had the privilege of collaborating with
-                talented teams to deliver engaging marketing sites and robust
-                enterprise solutions. With a background in design, I bring a
-                unique perspective to development, focusing on aesthetics and
-                user-friendly interfaces. Beyond coding, my goal is to create
-                intuitive web applications that prioritize accessibility and
-                user enjoyment. I believe in merging design sensibilities with
-                technical expertise to craft seamless digital experiences.
+                I&#39;m Nooshin, a frontend developer deeply passionate about
+                Code. Starting my journey in 2022, I&#39;ve been fully immersed
+                in web development, crafting digital products that blend
+                creativity with functionality. I&#39;ve had the privilege of
+                collaborating with talented teams to deliver engaging marketing
+                sites and robust enterprise solutions. With a background in
+                design, I bring a unique perspective to development, focusing on
+                aesthetics and user-friendly interfaces. Beyond coding, my goal
+                is to create intuitive web applications that prioritize
+                accessibility and user enjoyment. I believe in merging design
+                sensibilities with technical expertise to craft seamless digital
+                experiences.
               </p>
             </div>
 
