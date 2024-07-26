@@ -1,13 +1,18 @@
+"use client";
+
 import React from "react";
 import IconLogo from "../../public/assest/images/Vector-light-2.svg";
 import IconLogoBlack from "../../public/assest/images/Vector-black.svg";
 import Link from "next/link";
 import Image from "next/image";
 import { MdGite, MdSegment } from "react-icons/md";
+import { useState } from "react";
 export default function NavBar() {
+  const [active, setActive] = useState("home");
+
   return (
     <>
-      <div className="lg:hidden flex   items-center justify-between  ">
+      <div className="lg:hidden flex  items-center justify-between  ">
         <Image
           src={IconLogoBlack}
           width={35}
@@ -30,19 +35,46 @@ export default function NavBar() {
           backgroundColor: "rgba(255, 255, 255, 0.40)",
           backdropFilter: "blur(47.5px) ",
         }}
-        className=" hidden lg:flex border sticky top-8 z-50 shadow-2xl w-[900px] mx-auto  mb-7 bg-white items-center justify-between  rounded-full text-slate-600 "
+        className=" hidden lg:flex border sticky top-8 z-50 shadow-2xl w-[600px] mx-auto  mb-7 bg-white items-center justify-between  rounded-full text-slate-600 "
       >
         <nav>
           <ul className="flex px-3 gap-10 py-2 ">
-            <li className="py-3  rounded-3xl px-6 bg-[#8470b4] text-white">
-              Home
-            </li>
+            <Link href={"/"}>
+              <li
+                className={`py-3  rounded-3xl px-6`}
+                style={{
+                  background: active === "home" ? "#8470b4" : "",
+                  color: active === "home" ? "white" : "",
+                }}
+                onClick={() => setActive("home")}
+              >
+                Home
+              </li>
+            </Link>
             <Link href={"#about-me"}>
-              <li className=" py-3  rounded-3xl px-6 ">About</li>
+              <li
+                className=" py-3  rounded-3xl px-6 "
+                style={{
+                  background: active === "#about-me" ? "#8470b4" : "",
+                  color: active === "#about-me" ? "white" : "",
+                }}
+                onClick={() => setActive("#about-me")}
+              >
+                About
+              </li>
             </Link>
-            <Link href={"#blog"}>
-              <li className=" py-3  rounded-3xl px-6">Exprience</li>
-            </Link>
+            {/* <Link href={"#expreince"}>
+              <li
+                className=" py-3  rounded-3xl px-6"
+                style={{
+                  background: active === "#expreince" ? "#8470b4" : "",
+                  color: active === "#expreince" ? "white" : "",
+                }}
+                onClick={() => setActive("#expreince")}
+              >
+                Exprience
+              </li>
+            </Link> */}
           </ul>
         </nav>
         <Link href={"/"}>
@@ -61,18 +93,45 @@ export default function NavBar() {
 
         <nav>
           <ul className="flex px-3 gap-10 py-2 ">
-            <Link href="/pdf-viewer" passHref>
-              <li className="py-3 rounded-3xl px-6">Skills</li>
+            <Link href="#skill">
+              <li
+                className="py-3 rounded-3xl px-6"
+                style={{
+                  background: active === "#skill" ? "#8470b4" : "",
+                  color: active === "#skill" ? "white" : "",
+                }}
+                onClick={() => setActive("#skill")}
+              >
+                Skills
+              </li>
             </Link>
 
             <Link href="#project">
               {" "}
-              <li className=" py-3  rounded-3xl px-6">Project</li>
+              <li
+                className=" py-3  rounded-3xl px-6"
+                style={{
+                  background: active === "#project" ? "#8470b4" : "",
+                  color: active === "#project" ? "white" : "",
+                }}
+                onClick={() => setActive("#project")}
+              >
+                Project
+              </li>
             </Link>
-            <Link href="#contact">
+            {/* <Link href="#contact">
               {" "}
-              <li className=" py-3  rounded-3xl px-6">Contact</li>
-            </Link>
+              <li
+                className=" py-3  rounded-3xl px-6"
+                style={{
+                  background: active === "#contact" ? "#8470b4" : "",
+                  color: active === "#contact" ? "white" : "",
+                }}
+                onClick={() => setActive("#contact")}
+              >
+                Contact
+              </li>
+            </Link> */}
           </ul>
         </nav>
       </div>

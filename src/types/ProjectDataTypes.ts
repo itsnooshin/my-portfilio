@@ -6,6 +6,9 @@ interface PojectDataItem {
   text: string;
   technology: string[];
   title: string;
+  linkURl: string;
+  linkGithub: string;
+  TitleProject: string;
 }
 
 type ProjectDataTypes = PojectDataItem[];
