@@ -22,7 +22,7 @@ const Page = () => {
           <div className="w-[900px] mx-auto pt-14 z-50">
             <h1 className="pb-10 font-bold text-[2rem]">About the project.</h1>
             <p className="w-[800px] leading-8">
-              Modimal is a Next.js e-commerce platform for women's clothing,
+              Modimal is a Next.js e-commerce platform for women&#39;s clothing,
               featuring a responsive Material UI design and TypeScript for code
               safety. It uses Redux Toolkit for state management and Supabase
               for database operations. The app offers user authentication,
@@ -140,7 +140,7 @@ const Page = () => {
           <div className=" mx-auto pt-14 z-50">
             <h1 className="pb-10 font-bold text-[2rem]">About the project.</h1>
             <p className=" leading-8">
-              Modimal is a Next.js e-commerce platform for women's clothing,
+              Modimal is a Next.js e-commerce platform for women&#39;s clothing,
               featuring a responsive Material UI design and TypeScript for code
               safety. It uses Redux Toolkit for state management and Supabase
               for database operations. The app offers user authentication,
@@ -171,7 +171,6 @@ const Page = () => {
               </div>
               <div className="flex flex-col mt-5  font-bold ">
                 <div>Developer</div>
-              
               </div>
               <div className="grid grid-cols-2  pt-3 text-gray-600">
                 <div>Nooshin Bakhtiari</div>
