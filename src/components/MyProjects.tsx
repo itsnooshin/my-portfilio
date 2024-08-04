@@ -28,7 +28,7 @@ export default function MyProjects() {
         </Link>
       </div>
 
-      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
         {projectData.map((item) => (
           <div
             key={item.id}
@@ -67,7 +67,7 @@ export default function MyProjects() {
             </div>
           </div>
         ))}
-      </div> */}
+      </div>
     </section>
   );
 }
