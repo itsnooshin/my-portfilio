@@ -85,11 +85,14 @@ export default function HeroSection() {
         </div>
         <div className="flex flex-col md:flex-row justify-center mt-10 gap-5">
           <button className=" bg-[#9370B4] px-4 md:text-[1.1rem]  p-3 md:py-2 md:px-5 rounded-full text-white">
-            Contact me here <span>&#8594;</span>
+            <a href="mailto:nooshin.bakhtiari96@gmail.com">
+              {" "}
+              Contact me here <span>&#8594;</span>
+            </a>
           </button>
           <button className="bg-white p-3 md:py-2 md:text-[1.1rem] md:px-5 rounded-full text-black shadow-2xl border">
-            Download Resume
-            <span className=" pl-1">&#8595;</span>
+            <a href="/CV.pdf">Download My Resume</a>
+            <span className="pl-1">&#8595;</span>
           </button>
         </div>
       </section>
